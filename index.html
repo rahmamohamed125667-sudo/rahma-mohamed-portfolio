@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma Mohamed | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: white;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #111b2e;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #111b2e, #172554);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin: 15px 0;
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 8px;
+            background: #38bdf8;
+            color: #0b1120;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .content {
+            background: #111b2e;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #111b2e;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid #24344f;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #111b2e;
+            text-align: center;
+            padding: 25px;
+            color: #38bdf8;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Rahma Mohamed</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h3>WELCOME TO MY PORTFOLIO</h3>
+        <h1>I'm Rahma Mohamed</h1>
+        <p>Computer Science Student | Aspiring Web Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="content">
+            <p>
+                Hello! My name is Rahma Mohamed.
+                I am a Computer Science student interested
+                in web development and programming.
+                I enjoy learning new technologies and
+                improving my skills by creating projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="card"><h3>HTML5</h3><p>Web Structure</p></div>
+            <div class="card"><h3>CSS3</h3><p>Web Design</p></div>
+            <div class="card"><h3>Bootstrap</h3><p>Responsive Design</p></div>
+            <div class="card"><h3>Problem Solving</h3><p>Logical Thinking</p></div>
+            <div class="card"><h3>Teamwork</h3><p>Working With Others</p></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>A personal website using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Design Project</h3>
+                <p>A practice project to improve my web design skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="content" style="text-align:center;">
+            <p>Thank you for visiting my portfolio!</p>
+            <p>GitHub:
+                <a href="https://github.com/rahmamohamed125667-sudo"
+                   target="_blank" style="color:#38bdf8;">
+                    Visit My GitHub
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Rahma Mohamed | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
